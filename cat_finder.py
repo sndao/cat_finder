@@ -351,16 +351,18 @@ for API_LATITUDE_VALUE, API_LONGITUDE_VALUE in LONG_LAT_LIST:
 
     def check_execution_cooldown():
         current_timestamp = time.time()
-        if os.path.exists(STATE_FILE_PATH):
-            try:
-                with open(STATE_FILE_PATH, FILE_READ_MODE) as fh:
-                    last_run_timestamp = float(fh.read().strip())
-                if current_timestamp - last_run_timestamp < COOLDOWN_SECONDS:
-                    print(f"Aborting. Script ran within last {COOLDOWN_SECONDS}s. last_run_timestamp={last_run_timestamp}.")
-                    sys.exit(0)
-            except Exception as exc:
-                print(f"Failed to read state file. Exc={exc}")
-                raise
+        # TODO: REMOVE THIS CHECK 
+
+        # if os.path.exists(STATE_FILE_PATH):
+        #     try:
+        #         with open(STATE_FILE_PATH, FILE_READ_MODE) as fh:
+        #             last_run_timestamp = float(fh.read().strip())
+        #         if current_timestamp - last_run_timestamp < COOLDOWN_SECONDS:
+        #             print(f"Aborting. Script ran within last {COOLDOWN_SECONDS}s. last_run_timestamp={last_run_timestamp}.")
+        #             sys.exit(0)
+        #     except Exception as exc:
+        #         print(f"Failed to read state file. Exc={exc}")
+        #         raise
 
 
     def record_execution_timestamp():
