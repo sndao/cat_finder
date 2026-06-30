@@ -121,8 +121,8 @@ LONG_LAT_LIST += sorted(
             f"{lat + 0.62431045357618:.14f}",
             f"{lon + 0.46843140581424:.14f}",
         )
-        for lat in range(25, 37)
-        for lon in range(-103, -91)
+        for lat in range(25, 35)
+        for lon in range(-105, -90)
     ],
     key=lambda p: (
         (float(p[0]) - home_lat) ** 2 +
