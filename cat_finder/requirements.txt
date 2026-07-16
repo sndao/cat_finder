@@ -1,0 +1,15 @@
+
+torch==2.2.2
+torchvision==0.17.2
+numpy==1.26.4
+transformers==4.38.2
+tokenizers==0.15.2
+huggingface-hub==0.21.4
+opencv-python-headless==4.9.0.80
+Pillow==10.2.0
+requests==2.31.0
+dataset==2.0.0
+accelerate==0.27.2
+SQLAlchemy==2.0.28
+opencv-python
+requests
