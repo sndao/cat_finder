@@ -613,9 +613,16 @@ def save_image_bytes(image_bytes, pet_identifier, source_url) -> str:
 
 def promote_to_orange_directory(relative_image_path, pet_identifier, final_score, orange_fraction, orange_dir_threshold) -> str:
     """
+
+    TODO: BROKEN. MOST CATS NOT ORANGE. DO NOT USE!
+
+
+
     Copy likely matches into orange_cat_images/ as <score>_<pet_id>.<ext>.
     Returns a RELATIVE path, or None if not admitted. Idempotent across rescores.
     """
+    return None
+
     passes_color = orange_fraction >= orange_dir_threshold
     passes_score = final_score >= ORANGE_DIR_MIN_SCORE
     if not (passes_color or passes_score):
