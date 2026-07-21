@@ -1,5 +1,7 @@
-https://github.com/sndao/cat_finder/
+found cats + photos:
+https://docs.google.com/spreadsheets/d/1de7uuQjjZhu8ghZKagVy-zpUHpSyrMPvqni299O8AwI/edit?gid=1349108449#gid=1349108449
 
+https://github.com/sndao/cat_finder/
 
 https://share.gemini.google/LYD3RBTJW84K
  
